@@ -28,7 +28,7 @@ app.use(cors({
 }));
 
 // Database connection
-const dbURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/SocialMedia'; // Replace with your actual URI
+const dbURI = process.env.MONGO_URI || 'mongodb+srv://kalsaitpc:RTzZf0eJ3kYaeGj9@cluster0.ipeck.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'; // Replace with your actual URI
 mongoose.connect(dbURI)
     .then(() => console.log('MongoDB connected'))
     .catch((err) => console.log('Error connecting to MongoDB:', err));
