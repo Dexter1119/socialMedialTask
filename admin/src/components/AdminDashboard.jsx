@@ -10,7 +10,7 @@ const UserTable = () => {
   // Fetch all users on component mount
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/users/submissions') // Replace with your API endpoint
+      .get('https://socialmedialtask.onrender.com/api/users/submissions') // Replace with your API endpoint
       .then((response) => {
         setUsers(response.data);
       })
