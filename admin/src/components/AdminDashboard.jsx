@@ -96,7 +96,7 @@ const UserTable = () => {
                 {selectedUser.images.map((image, index) => (
                   <img
                     key={index}
-                    src={`http://localhost:5000/${image}`}
+                    src={`https://socialmedialtask.onrender.com/${image}`}
                     alt={`User Image ${index + 1}`}
                     className="modal-image"
                   />
