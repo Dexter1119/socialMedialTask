@@ -16,7 +16,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded request bodies
 
 // Allow cross-origin requests from your frontend
-const allowedOrigins = ['http://localhost:5174', 'http://localhost:5175'];  // Correct CORS configuration
+const allowedOrigins = ['https://admin-i1ro.onrender.com', 'https://user-uhyu.onrender.com'];  // Correct CORS configuration
 app.use(cors({
     origin: function (origin, callback) {
         if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
