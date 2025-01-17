@@ -32,8 +32,6 @@ app.use(cors({
 const dbURI = process.env.MONGO_URI||'mongodb+srv://kalsaitpc:RTzZf0eJ3kYaeGj9@cluster0.ipeck.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(dbURI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
   connectTimeoutMS: 30000,  // Set connection timeout to 30 seconds
   socketTimeoutMS: 45000   // Set socket timeout to 45 seconds
 })
